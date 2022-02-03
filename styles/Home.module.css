@@ -114,3 +114,23 @@
     flex-direction: column;
   }
 }
+
+.pay{
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #0070f3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: 0.23s;
+  cursor: pointer;
+}
+
+.pay:hover{
+  background-color: #4da0ff;
+}
+
+.pay:active{
+  background-color: #003c80;
+}

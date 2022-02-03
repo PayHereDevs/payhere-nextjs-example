@@ -1,10 +1,12 @@
+# PayHere NextJS Example
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 This repo contains an example integration of a Next.js project with the [PayHere Javascript SDK](https://support.payhere.lk/api-&-mobile-sdk/payhere-javascript).
 
 ## PayHere
 
-######  1. Development and production versions of the `payhere.js` file are available in the "public" folder.
+1. Development and production versions of the `payhere.js` file are available in the "public" folder.
 
 ```
 - public
@@ -12,7 +14,7 @@ This repo contains an example integration of a Next.js project with the [PayHere
  - payhere.dev.js
 ```
 
-###### 2. In `index.js`, the appropriate script is loaded from this method:
+2. In `index.js`, the appropriate script is loaded from this method:
 ```js
 function payHereURL(){
     if (process && process.env.NODE_ENV == "production")
@@ -22,13 +24,13 @@ function payHereURL(){
 }
 ```
 
-###### 3. Include the PayHere Script as follows:
+3. Include the PayHere Script as follows:
 
 ```jsx
 <script src={payHereURL()}></script>
 ```
 
-###### 4. Check the `startPayment()` method in `index.js` to see how PayHere is integrated. 
+4. Check the `startPayment()` method in `index.js` to see how PayHere is integrated. 
 
 ## Run
 
